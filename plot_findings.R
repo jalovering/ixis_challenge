@@ -33,7 +33,7 @@ generate_lineplot <- function(data, x, y, colour, group, title, xlab, ylab, file
   plot <- ggplot(data = data, aes_string(x=x, y=y, colour=colour, group=group))+
     geom_line()+
     geom_point()+
-    theme(axis.text.x = element_text(angle = 55, vjust = 0.5,))+
+    theme(axis.text.x = element_text(angle = 55, vjust = 0.5))+
     ggtitle(title)+
     xlab(xlab)+
     ylab(ylab)+
